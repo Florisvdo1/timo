@@ -1,0 +1,101 @@
+
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cd7f32;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header .menu a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-consult {
+    background-color: #ffffff;
+    color: #cd7f32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Form */
+.consult-form {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.consult-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.consult-form label {
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.consult-form input, .consult-form select, .consult-form button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.consult-form input, .consult-form select {
+    background: #333333;
+    color: #ffffff;
+}
+
+.consult-form button {
+    background: #cd7f32;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.consult-form button:hover {
+    background: #ffffff;
+    color: #cd7f32;
+    transition: 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consult-form form {
+        width: 90%;
+    }
+}
